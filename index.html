@@ -20,15 +20,19 @@
     </nav>
 
     <main>
+        <div class="btn1">
+            <button type="Start" class="btn-s btn-primary btn-lg">Start</button>
+        </div>
 
-
-        <button type="Start" class="btn1 btn-primary btn-lg">Start</button>
+        <h1 id="timer">
+            Time Remaining:
+        </h1>
 
         <div class="form">
             <h5>question:1 <br>
                 Montgomery is the capital of which state?
             </h5>
-
+            <!--  a. Alabama -->
             <div class="form-check form-check-inline">
                 <input class="form-check-input" type="radio" name="1" id="1-1" value="option1">
                 <label class="form-check-label" for="inlineRadio1">a. Alabama</label>
@@ -50,7 +54,7 @@
             <h5>question:2
                 <br>Juneau is the capital of which state?
             </h5>
-
+            <!-- a. Alaska-->
             <div class="form-check form-check-inline">
                 <input class="form-check-input" type="radio" name="2" id="2-1" value="option1">
                 <label class="form-check-label" for="inlineRadio1"> a. Alaska</label>
@@ -71,7 +75,7 @@
             <h5>question:3
                 <br>Phoenix is the capital of which state?
             </h5>
-
+            <!-- b. Arizona-->
             <div class="form-check form-check-inline">
                 <input class="form-check-input" type="radio" name="3" id="3-1" value="option1">
                 <label class="form-check-label" for="inlineRadio1">a. New Mexico</label>
@@ -92,7 +96,7 @@
             <h5>question:4
                 <br>Little Rock is the capital of which state?
             </h5>
-
+            <!-- c. Arkansas-->
             <div class="form-check form-check-inline">
                 <input class="form-check-input" type="radio" name="4" id="4-1" value="option1">
                 <label class="form-check-label" for="inlineRadio1">a. Iowa</label>
@@ -113,7 +117,7 @@
             <h5>question:5
                 <br>Sacramento is the capital of which state?
             </h5>
-
+            <!-- a. California-->
             <div class="form-check form-check-inline">
                 <input class="form-check-input" type="radio" name="5" id="5-1" value="option1">
                 <label class="form-check-label" for="inlineRadio1">a. California</label>
@@ -134,7 +138,7 @@
             <h5>question:6
                 <br>Denver is the capital of which state?
             </h5>
-
+            <!-- a. Colorado-->
             <div class="form-check form-check-inline">
                 <input class="form-check-input" type="radio" name="6" id="6-1" value="option1">
                 <label class="form-check-label" for="inlineRadio1">a. Colorado</label>
@@ -155,7 +159,7 @@
             <h5>question:7
                 <br>Hartford is the capital of which state?
             </h5>
-
+            <!-- c. Connecticut-->
             <div class="form-check form-check-inline">
                 <input class="form-check-input" type="radio" name="7" id="7-1" value="option1">
                 <label class="form-check-label" for="inlineRadio1">a. New Hampshire</label>
@@ -176,7 +180,7 @@
             <h5>question:8
                 <br>Dover is the capital of which state?
             </h5>
-
+            <!-- c. Delaware-->
             <div class="form-check form-check-inline">
                 <input class="form-check-input" type="radio" name="8" id="8-1" value="option1">
                 <label class="form-check-label" for="inlineRadio1">a. Wisconsin</label>
@@ -197,7 +201,7 @@
             <h5>question:9
                 <br>Tallahassee is the capital of which state?
             </h5>
-
+            <!-- b. Florida-->
             <div class="form-check form-check-inline">
                 <input class="form-check-input" type="radio" name="9" id="9-1" value="option1">
                 <label class="form-check-label" for="inlineRadio1">a. Alabama</label>
@@ -218,7 +222,7 @@
             <h5>question:10
                 <br>Atlanta is the capital of which state?
             </h5>
-
+            <!-- c. Georgia -->
             <div class="form-check form-check-inline">
                 <input class="form-check-input" type="radio" name="10" id="10-1" value="option1">
                 <label class="form-check-label" for="inlineRadio1">a. West Virginia</label>
@@ -238,6 +242,19 @@
             <br>
             <button type="submit" class="btn btn-primary">Submit</button>
 
+        </div>
+
+        <div class="result">
+            <h1>All Done!</h1>
+            <div class="win">
+                <h4>Correct Answers: </h4>
+            </div>
+            <div class="loss">
+                <h4>Incorrect Answers: </h4>
+            </div>
+            <div class="left">
+                <h4>Unanswered: </h4>
+            </div>
         </div>
 
 
