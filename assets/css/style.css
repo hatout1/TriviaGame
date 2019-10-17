@@ -22,6 +22,10 @@ h2{
     padding-top: 3.5vh;
 }
 
+.item{
+    display: none;
+}
+
 #timer{
     text-align: center;
     width: 70%;
@@ -34,6 +38,7 @@ margin-bottom: 5%;
 .btn1{
     text-align: center;
 }
+
 
 .btn-s{
     margin: 5%;
@@ -50,7 +55,7 @@ margin-bottom: 5%;
     margin-right: 10%;
 }
 
-.btn{
+.btn2,.btn1{
     margin-top: 20px;
     margin-bottom: 20px;
     height: 100px;
