@@ -46,7 +46,7 @@ margin-bottom: 5%;
     width: 200px;
 }
 
-.form{
+#form{
     display: table;
     background-color: rgba(240, 255, 255, 0.308);
     text-align: center;
@@ -70,14 +70,18 @@ main{
 
 
 .result{
-    display: table;
-    margin-left: 10%;
+    display: none;
+
+}
+/* .result{ */
+    /* display: table; */
+    /* margin-left: 10%;
     margin-right: 10%;
     margin-top: 5%;
     background-color: azure;
     width: 80%;
     text-align: center;
-}
+} */
 
 footer{
     background-color: aquamarine;
