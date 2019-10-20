@@ -3,7 +3,7 @@
 }
 
 body{
-background-image: url();
+background-image: url(../images/2.jpg);
 background-position: center;
 background-repeat: no-repeat;
 background-size: cover;
@@ -11,15 +11,42 @@ background-size: cover;
 }
 
 nav{
-    background-color: aquamarine;
+    background-color: rgba(127, 255, 212, 0.493);
     text-align: center;
     vertical-align: middle;
     height: 10vh;
     width: 100%;
-    }
+}
 
 h2{
     padding-top: 3.5vh;
+    color: azure;
+    
+}
+
+#wel{
+    text-align: center;
+    font-size: 48px;
+    background-color: rgba(154, 156, 151, 0.37);
+    color: white;
+    margin-top: 5vmin;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.btn1{
+    text-align: center;
+    margin-top: 150px;
+    margin-bottom: 20px;
+    height: 100px;
+    width: 100%;
+    font-size: 48px;
+    background-color: rgba(255, 255, 255, 0.425);
+}
+
+.btn1:hover{
+    background-color: rgba(30, 26, 248, 0.753);
+    color: white;
 }
 
 .item{
@@ -30,61 +57,164 @@ h2{
     text-align: center;
     width: 70%;
     margin-left: 15%;
-margin-right: 15%;
-margin-top: 5%;
-margin-bottom: 5%;
-
-}
-.btn1{
-    text-align: center;
+    margin-right: 15%;
+    margin-top: 5%;
+    color: red;
 }
 
-
-.btn-s{
-    margin: 5%;
-    height: 100px;
-    width: 200px;
+#timer1{
+    color: lawngreen;
+    height: 50px;
 }
 
 #form{
     display: table;
-    background-color: rgba(240, 255, 255, 0.308);
     text-align: center;
-    width: 80%;
-    margin-left: 10%; 
-    margin-right: 10%;
+    width: 90%;
+    margin-left: 5%; 
+    margin-right: 5%;
+    font-size: 24px;
+    animation: move 3s;
+    -webkit-animation: move 3s;
+}
+    @keyframes move {
+    from {
+        margin-left: 100%;
+        width: 300%; 
+        }
+
+    to {
+        margin-left: 0%;
+        width: 100%;
+        }
+    }
+
+    @-webkit-keyframes move {
+        from {
+        margin-left: 100%;
+        width: 300%; 
+        }
+
+        to {
+        margin-left: 0%;
+        width: 100%;
+        }
+    }
+
+h3{
+    color: white;
+    text-align: left;
+    font-size: 40px;
+    
 }
 
-.btn2,.btn1{
+.form-check-label{
+    color: rgb(54, 255, 47);
+    text-decoration-line: underline;
+    text-decoration-color: slateblue;
+    
+}
+
+.form-check-label:hover{
+    color: red;
+}
+
+input[type=radio]:hover {
+    width: 20%;
+    height: 2em;
+}
+
+.form-check{
+    width: 20%;
+}
+
+.btn2{
     margin-top: 20px;
     margin-bottom: 20px;
     height: 100px;
-    width: 200px;    
+    width: 100%;    
+    font-size: 48px;
+    background-color: rgba(255, 255, 255, 0.425);
+}
+.btn2:hover{
+    background-color: rgba(30, 26, 248, 0.753);
+    color: white;
 }
 
 main{
-    background-color: rgba(255, 228, 196, 0.815);
     min-height: 85vh;
     width: 100%;
 }
 
-
 .result{
     display: none;
-
 }
-/* .result{ */
-    /* display: table; */
-    /* margin-left: 10%;
+
+.result{
+    margin-left: 10%;
     margin-right: 10%;
     margin-top: 5%;
-    background-color: azure;
+    background-color: rgba(240, 255, 255, 0.137);
     width: 80%;
     text-align: center;
-} */
+    padding-bottom: 50px;
+}
+
+#done{
+    font-size: 80px;
+    color: white;
+    text-orientation: sideways;
+}
+#win{
+    margin-top: 30px;
+color: green;
+font-size: 60px;
+}
+#loss{
+    margin-top: 30px;
+    color: red;
+    font-size: 60px;
+}
+#left{
+
+    margin-top: 30px;
+    color: yellow;
+    font-size: 60px;
+}
+
+#h4{
+    color: white;
+    font-size: 48px;
+    padding-top: 100px;
+    animation: move 1s;
+    -webkit-animation: move 1s;
+}
+    @keyframes move {
+    from {
+        margin-right: 100%;
+        width: 300%; 
+        }
+
+    to {
+        margin-left: 0%;
+        width: 100%;
+        }
+    }
+
+    @-webkit-keyframes move {
+        from {
+        margin-right: 100%;
+        width: 300%; 
+        }
+
+        to {
+        margin-left: 0%;
+        width: 100%;
+        }
+    }
 
 footer{
-    background-color: aquamarine;
+    background-color: rgba(127, 255, 212, 0.493);
     height: 5vh;
     width: 100%;
 }

@@ -4,16 +4,10 @@ $(document).ready(function () {
     var CorrectAnswers = 0;
     var IncorrectAnswers = 0;
     var Unanswered = 0;
-    let inputBox = $('input');
+
     // set this var on global to function for both cases (count down and submit button click)
-    var timeleft = 10;
+    var timeleft = 180;
 
-    if (timeleft < 0) {
-        // grabAndCompare();
-        // myFunction2();
-        console.log('time')
-
-    }
     // function to remove welcome text and start button.
     $('.btn1').click(function myFunction() {
         $(this).siblings(".item").toggle();
@@ -32,9 +26,8 @@ $(document).ready(function () {
             document.getElementById("timer1").innerHTML = timeleft-- + " Seconds left!!!";
 
             // if countdown = 0 move to next steep
-            if (timeleft > 0) {
-                return;
-            } else {
+
+            if (timeleft === 0) {
 
                 clearInterval(progress);
                 $(".btn2").next().toggle();
@@ -43,21 +36,25 @@ $(document).ready(function () {
                 if ((V.style.display === "none") && (timeleft >= 0)) {
                     V.style.display = "block";
                 } else {
-                    V.style.display = "none"; x
+                    V.style.display = "none";
                 }
+
+
             }
 
         }, 1000);
     });
 
-    // let inputBox = $('input');
+    let inputBox = $('input');
 
     // function to remove questions and timer, then to show result layout.
     $('.btn2').click(function myFunction2() {
         // on click this function will stop the timer by setting it to "0"
-        timeleft === 0;
+        timeleft = 0;
+
         //then will show results lay out after removing questioins and timer.       
-        $(this).next().toggle();
+        // $(this).next().toggle();
+        $(this).next().show("form");
         $(this).remove(".btn2");
         var V = document.getElementById("form");
 
@@ -68,6 +65,7 @@ $(document).ready(function () {
         }
 
         grabAndCompare();
+
 
     });
 
@@ -184,9 +182,7 @@ $(document).ready(function () {
             $('#win').html(CorrectAnswers)
             $('#loss').html(IncorrectAnswers)
             $('#left').html(Unanswered)
-
         });
-
     };
 })
 
